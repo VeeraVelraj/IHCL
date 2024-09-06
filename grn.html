@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<style>
+        body {
+            padding: 20px;
+        }
+ 
+        table {
+            font-family: 'Helvetica', sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+ 
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+ 
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+ 
+        th {
+            text-align: left;
+        }
+</style>
+</head>
+ 
+<body>
+ 
+    <table border="1">
+<tr>
+<td>
+<h2 style="text-align: right;">GRN</h2>
+</td>
+</tr>
+</table>
+ 
+    <table>
+<tr>
+<th colspan="3" style="text-wrap: wrap;">Goods Received By:{{goods_rec_by}}</th>
+ 
+            <th colspan="3">PO Number:{{po_number}}</th>
+<th colspan="3">Invoice To:{{invoice_to}}</th>
+<th colspan="3">Shipped To:{{shipped_to}}</th>
+</tr>
+<tr>
+<td colspan="4">Contact Person:{{contact_person}}</td>
+<td colspan="4">PO Date:{{po_date}}</td>
+<td colspan="4">Email:{{email}}</td>
+ 
+        </tr>
+<tr>
+<td colspan="4">Email:{{email}}</td>
+<td colspan="4">PO Value:{{po_value}}</td>
+<td colspan="4">GSTIN:{{GSTIN}}</td>
+ 
+        </tr>
+<tr>
+<td colspan="12">Contact No.:{{contact_number}}</td>
+ 
+        </tr>
+</table>
+ 
+    <table border="1">
+<tr>
+<td>
+<h2 style="text-align: center;">GRN Details</h2>
+</td>
+</tr>
+</table>
+ 
+    <table>
+<tr>
+<th>GRN Number:{{grn_number}}</th>
+<th>Creation Date:{{creation_date}}</th>
+</tr>
+<tr>
+<td>Delivery Date:{{delivery_date}}</td>
+<td>Amendment:{{amendment}}</td>
+</tr>
+<tr>
+<td>Inward Number:{{inward_number}}</td>
+<td>Inward Date:{{inward_date}}</td>
+</tr>
+<tr>
+<td>Testing Date:{{testing_date}}</td>
+<td></td>
+</tr>
+</table>
+ 
+    <table style="width:100%">
+<tr>
+<th colspan="1">#</th>
+<th colspan="1">Description</th>
+<th colspan="1">OEM</th>
+<th colspan="1">Model</th>
+<th colspan="1">Serial</th>
+<th colspan="1">Quantity Ordered</th>
+<th colspan="1">Unit{{unit}}</th>
+<th colspan="1">Quantity Received</th>
+<th colspan="1">Quantity Accepted</th>
+<th colspan="1">Quantity Rejected</th>
+</tr>
+<tr>
+<td>{{table_data}}</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+ 
+    <table border="1">
+<tr>
+<td>
+<p style="text-align: left;">Terms and Conditions:{{terms_and_conditions}}</p>
+</td>
+</tr>
+</table>
+ 
+    <table border="1">
+<tr>
+<td>
+<p style="text-align: right;">Authorized Signatory:{{authorized_signatory}}</p>
+</td>
+</tr>
+</table>
+ 
+</body>
+ 
+</html>
